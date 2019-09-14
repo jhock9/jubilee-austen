@@ -5,10 +5,6 @@ body {
     color: #2b2b2b;
 }
 
-#about, #work, #contact {
-    height: 600px;
-}
-
 /***** GRID *****/
 
 .full-width {
@@ -24,6 +20,10 @@ body {
 .third-width {
     width: 400px;
     float: left;
+}
+
+#about, #work, #contact {
+    height: 600px;
 }
 
 /***** HEADER *****/
