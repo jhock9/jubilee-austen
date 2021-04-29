@@ -20,24 +20,34 @@ body {
 
 h1,
 h2,
-h3, {
-
+h3,
+#work p,
+#contact h3 {
+    font-family: 'Lora', serif;
 }
 
 h1 {
-
+    font-size: 30px;
 }
 
 h2 {
-
+    font-size: 72px;
 }
 
 h3 {
+    font-size: 36px;
+}
 
+h4 {
+    font-size: 24px;
 }
 
 p {
-
+    font-size: 21px;
+    line-height: 40px;
+}
+#work p {
+    font-size: 18px;
 }
 
 ul {
@@ -53,8 +63,6 @@ header {
 }
 
 header h1 {
-    font-family: 'Lora', serif;
-    font-size: 30px;
     color: #bbc085;
     padding: 65px 0 65px 25px;
 }
@@ -76,15 +84,13 @@ nav ul li a {
 
 header h2 {
     width: 1000px;
-    font-family: 'Lora', serif;
-    font-size: 72px;
     line-height: 80px;
-    color: #9b9b9b;
+    color: #2b2b2b;
     padding: 20px 0 20px 25px;
 }
 
 header h2 span {
-    color: #2b2b2b;
+    color: #9b9b9b;
 }
 
 /***** ABOUT *****/
@@ -93,16 +99,12 @@ header h2 span {
     padding: 80px 0;
 }
 
-#about h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
+#about h3 {
     padding-left: 50px;
 }
 
 #about p {
-    font-size: 21px;
     color: #7f7f7f;
-    line-height: 40px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -122,16 +124,13 @@ header h2 span {
     padding-bottom: 30px;
 }
 
-#work h3 {
-    font-size: 24px;
+#work h4 {
     line-height: 32px;
     width: 190px;
     margin: 0 auto;
 }
 
 #work p {
-    font-family: 'Lora', serif;
-    font-size: 18px;
     line-height: 30px;
     padding: 0 50px;
 }
@@ -159,22 +158,18 @@ header h2 span {
     padding: 0 10px 0 115px;
 }
 
-#contact h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
+#contact h3 {
     line-height: 44px;
 }
 
 #contact #email-header {
-    font-size: 32px;
     font-weight: 400;
     line-height: 44px;
     margin: -30px 0 5px 0;
 }
 
 #contact #social-media-header {
-    font-weight: bold;
-    font-size: 29px;
+    font-weight: 700;
     line-height: 44px;
     margin: 40px 0 0 0;
 }
