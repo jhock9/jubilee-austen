@@ -6,12 +6,23 @@ html {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #2b2b2b;
+    color: black;
+    font-size: 1em;
 }
 
 .container {   
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
+}
+
+body,
+.container,
+header,
+.header-top,
+.header-bottom,
+.top-section,
+.bottom-section,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,153 +35,183 @@ h3,
 #work p,
 #contact h3 {
     font-family: 'Lora', serif;
+    color: black;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 72px;
+    font-size: 2.5em;
+    /*tablet styles
+    font-size: 3.5em;*/
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 1.875em;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 1.5em;
+    color: black;
 }
 
 p {
-    font-size: 21px;
+    font-size: 1.3em;
     line-height: 40px;
-}
-#work p {
-    font-size: 18px;
 }
 
 ul {
-
+    margin: 0;
 }
 
 /***** HEADER *****/
 
 header {
-/*    height: 800px;*/
     background: url('../img/hero.png');
     background-size: cover;
+    width: 100%;
+    text-align: center;
 }
+
 
 header h1 {
     color: #bbc085;
-    padding: 65px 0 65px 25px;
+    margin: 0;
+    padding: 38px 20px 20px 20px;
+    width: 100%;
 }
 
-nav {
-    padding: 75px 25px;
+header nav {
+    padding: 0 0 20px 0;
+    width: 70%;
+    border-bottom: 2px solid #bbc085;
 }
 
-nav ul li{
+header nav ul {
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
+header nav ul li{
     text-transform: uppercase;
+    font-size: 1.25em;
+    padding: 10px 0;
+    list-style: none;
+}
+
+header nav ul li a {
     text-decoration: none;
-    font-size: 18px;
     color: #828282;
-    padding-left: 80px;
 }
 
 header h2 {
-    width: 1000px;
+    width: 100%;
     line-height: 80px;
-    color: #2b2b2b;
-    padding: 20px 0 20px 25px;
+    padding: 30px 0;
+    margin: 0;
+    color: #828282;
+    font-weight: lighter;
 }
 
 header h2 span {
-    color: #9b9b9b;
+    /* tablet media queries --
+    color: #9b9b9b;*/
+    color: #3a3a3a;
+    width: 100%;
+    font-weight: 700;
 }
 
 /***** ABOUT *****/
 
-#about .full-width {
-    padding: 80px 0;
-}
-
 #about h3 {
-    padding-left: 50px;
+    padding: 5px 0;
+    margin: 40px 0 20px 0;
 }
 
 #about p {
-    color: #7f7f7f;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 20px 15px; 
+    color: #828282;
+    text-align: center;
+    margin: 0;
 }
 
+#about-two {
+    padding-bottom: 20px;
+}
 /***** WORK *****/
 
 #work {
     background: #f9ceb7;
     text-align: center;
+    width: 100%;
+    padding: 20px 0;
 }
 
-#work .full-width {
-    padding: 115px 0;
+#work-one,
+#work-two,
+#work-three {
+	width: 100%;
 }
 
-#work img {
-    padding-bottom: 30px;
+#work img{
+    padding: 30px 0 20px 0;
+
 }
 
 #work h4 {
-    line-height: 32px;
-    width: 190px;
-    margin: 0 auto;
+    padding: 5px 0;
+    margin: 0;
 }
 
 #work p {
     line-height: 30px;
-    padding: 0 50px;
+    padding: 0 15px;
+    font-size: 1.2em;
 }
 
-/***** CONTACT *****/
+/***** FOOTER-CONTACT *****/
 
-#contact {
+footer {
+    width: 100%;
     background-color: #ebebeb;
+    text-align: center;
 }
 
-#contact .full-width {
-    padding: 110px 0;
+#contact-image {
+ /* move to tablet queries -- 
+border: 12px solid white;*/
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;
 }
 
-#contact #contact-img {
-   margin-left: 25px;
-   border: 12px solid white;
-}
+#contact-image img {
+    width: 100%;
+   }
 
-#contact h2, #contact #email-header, #contact #social-media-header, #contact ul {
-    padding-left: 115px;
-}
-
-#contact #envelope {
-    padding: 0 10px 0 115px;
-}
+#contact-text {
+    width: 100%;
+    padding: 20px 0;
+}   
 
 #contact h3 {
-    line-height: 44px;
+    margin: 20px 0;
 }
 
 #contact #email-header {
     font-weight: 400;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
+    padding: 10px 0;
+    margin: 0;
+}
+#contact-text a {
+    padding: 10px 0;
+    width: 100%;
 }
 
 #contact #social-media-header {
     font-weight: 700;
-    line-height: 44px;
     margin: 40px 0 0 0;
 }
 
@@ -178,17 +219,20 @@ header h2 span {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75em;
 }
 
 #contact ul {
     list-style: none;
+    width: 100%;
+    padding: 15px 0 20px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 #contact ul li {
+	margin: 0;
+	padding: 0;
 }
 
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
-    }
