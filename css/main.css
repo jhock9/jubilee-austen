@@ -11,7 +11,6 @@ body {
 }
 
 .container {   
-    max-width: 1200px;
     width: 100%;
 }
 
@@ -64,9 +63,12 @@ ul {
 
 /***** HEADER *****/
 
-header {
+.header-wrapper {
     background: url('../img/hero.png');
     background-size: cover;
+}
+
+header {
     width: 100%;
     text-align: center;
     margin: 0;
@@ -248,12 +250,18 @@ footer {
 
     header h2 {
         font-size: 2.5em;
+        width: 70%;
+    }
+
+    #about p {
+        padding: 20px 40px;
     }
 
     #work {
         display: flex;
 		justify-content: space-around;
-        align-items: flex-start;     
+        align-items: flex-start;
+        padding: 0 10px;     
     }
 
     #work-one,
@@ -311,14 +319,14 @@ footer {
 
     header h1 {
 		width: 30%;
-		padding: 75px 20px;
+		padding: 60px 50px;
 		text-align: left;
 	}
 
     header nav {
-        width: 30%;
+        width: 25%;
         border-bottom: none;
-        padding: 75px 20px;
+        padding: 60px 50px;
     }
 
 	header nav ul {
@@ -333,7 +341,8 @@ footer {
         color: #3a3a3a;
         text-align: left;
         margin: 60px 0 300px 0;
-        padding: 0 20px;
+        padding: 0 50px;
+        width: 100%;
     }
     
     header h2 span {
@@ -342,7 +351,7 @@ footer {
 
     #about,
     #work {
-        padding: 60px 0;
+        padding: 40px 0;
         justify-content: space-around;
         align-items: flex-start;  
         width: 100%;      
@@ -351,8 +360,9 @@ footer {
     #about h3 {
         font-size: 2.25em;
         text-align: left;
-        padding: 20px 0;
-        margin: 0 0 0 50px;
+        padding: 20px 0 20px 20px;
+        margin: 0;
+        width: 93.5%;
     }
 
     #about-one,
@@ -365,18 +375,23 @@ footer {
     #about p {
         text-align: left;
         margin: 0;
+        padding: 20px;
     }
 
     #work-one,
 	#work-two,
 	#work-three {
-		width: 30%;
-        padding: 0 .1%;
+		width: 26%;
+        padding: 0;
         margin: 0;
 	}
 
     #work h4 {
         margin: 0 40px;
+        padding: 0;
+    }
+
+    #work p {
         padding: 0;
     }
 
