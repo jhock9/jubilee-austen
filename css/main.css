@@ -8,16 +8,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
   font-size: 1em;
-}
-
-body,
-header,
-.header-top,
-.header-bottom,
-.top-section,
-.bottom-section,
-footer,
-#contact-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +16,19 @@ footer,
 
 .content-wrapper {
   width: 90%;
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#about,
+#work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 h1,
@@ -49,35 +52,36 @@ h3 {
 h4 {
   font-size: 1.5em;
   color: black;
+  margin: 0;
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.25em;
   line-height: 40px;
+  margin: 0;
+}
+
+img {
+  margin: 0;
 }
 
 /***** HEADER *****/
 
-.header-wrapper {
-  background: url('../img/hero.png');
-  background-size: cover;
-}
-
 header {
+  background: url('../img/hero.png') center no-repeat #333;;
+  background-size: cover;
   width: 100%;
   text-align: center;
   margin: 0;
-}
-
-header .content-wrapper {
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header h1 {
   color: #bbc085;
-  margin: 0;
-  padding: 38px 20px 20px 20px;
+  margin: 0 0 20px 0;
   width: 100%;
 }
 
@@ -106,8 +110,8 @@ header nav ul li a {
 
 header h2 {
   width: 100%;
-  line-height: 80px;
-  padding: 30px 10px;
+  line-height: 60px;
+  padding: 30px 0 0 0;
   margin: 0;
   color: #828282;
   font-weight: lighter;
@@ -121,57 +125,49 @@ header h2 span {
 
 /***** ABOUT *****/
 
-#about{
+#about {
   width: 100%;
 }
 
 #about h3 {
-  padding: 5px 0;
-  margin: 40px 0 20px 0;
+  margin: 0;
   width: 100%;
   text-align: center;
 }
 
-#about p {
-  padding: 20px; 
+#about .about-description {
+  margin-top: 40px; 
   color: #828282;
   text-align: center;
-  margin: 0;
 }
 
-#about-two {
-  padding-bottom: 20px;
-}
 /***** WORK *****/
 
 #work {
   background: #f9ceb7;
   text-align: center;
   width: 100%;
-  padding: 40px 0;
 }
 
-#work-one,
-#work-two,
-#work-three {
+#work .content-wrapper {
+  margin-bottom: 0;
+}
+
+#work .work-icon {
 width: 100%;
 }
 
-#work img{
-  padding: 30px 0 20px 0;
-
+#work .work-description {
+  margin-bottom: 60px;
 }
 
 #work h4 {
-  padding: 5px 10px;
-  margin: 0;
+  margin: 20px 0;
 }
 
 #work p {
   line-height: 30px;
-  padding: 0 20px;
-  font-size: 1.2em;
-  margin: 20px 0;
+  font-size: 1.125em;
 }
 
 /***** FOOTER-CONTACT *****/
@@ -180,68 +176,85 @@ footer {
   width: 100%;
   background-color: #ebebeb;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-#contact-image {
+footer .contact-image {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   width: 100%;
+  justify-content: center;
 }
 
-#contact-image img {
+footer .contact-image img {
   width: 100%;
   }
 
-#contact-text {
+footer .contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer .contact-content {
   width: 100%;
-  padding: 20px 0;
 }   
 
-#contact h3,
-#contact h4 {
-  width: 100%;
+footer h3 {
   margin: 30px 0 0 0;
 }
 
-#contact #email-header {
-  font-weight: 400;
-}
-#contact-text a {
-  padding: 10px 0;
+footer .contact-text {
+  margin: 40px 0;
   width: 100%;
+}
+
+footer h4 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+footer .contact-text a {
   text-decoration: none;
   color: #c49075;
-  font-weight: bold;
   font-size: 1.75em;
+  font-weight: bold;
 }
 
-#social {
-  width: 70%;
+footer .social {
+  width: 90%;
 }
 
-#contact #social-media-header {
-  font-weight: 700;
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#social ul {
-  list-style: none;
+footer .social-icons p {
   width: 100%;
-  margin: 20px 0;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-#social ul li {
-  margin: 0;
-  padding: 0;
+footer .social-icons p i {
+  color: #c49075;
+  font-size: 1.75em;
 }
 
 /***** MEDIA QUERIES *****/
 
 /*Tablet*/
 @media all and (min-width: 768px) {
-	header nav ul {
+	
+  header nav ul {
     padding: 0 10%;
     display: flex;
 		justify-content: space-around;
@@ -249,71 +262,70 @@ footer {
 
   header h2 {
     font-size: 2.5em;
-    width: 70%;
   }
 
-  #about p {
-    padding: 20px 40px;
-  }
-
-  #work {
+  #work .content-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 0 10px;     
   }
 
-  #work-one,
-	#work-two,
-	#work-three {
-    width: 30%;
+  #work .work-icon {
     margin: 0;
   }
 
   #work h4 {
-    margin: 0 20px;
-    padding: 15px 0;
+    font-size: 1.75em;
   }
-
+  
   #work p {
-    padding: 0 10px;
+    line-height: 30px;
+    font-size: 1.25em;
   }
 
-  footer {
-    padding: 50px 0;
+  footer .content-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
-  #contact-image,
-  #contact-text {
-    width: 45%;
-    padding: 0;
+  footer .contact-image,
+  footer .contact-content {
+    width: 48%;
   }
 
-  #contact-image {
-    border: 12px solid white;
+  footer .contact-image {
+    border: 6px solid white;
   }
 
-  #contact h3 {
+  footer h3 {
+    font-size: 1.75em;
     margin: 0;
   }
 
-  #contact h4 {
-    width: 100%;
+  footer .contact-text a {
+    font-size: 1.5em;
   }
   
-  #social {
-    width: 80%;
+  footer .social {
+    width: 100%;
+  }
+
+  footer .social-icons p i {
+    font-size: 2em;
   }
 }
 
 /*Desktop*/
 @media all and (min-width: 1200px) {
 
+  .content-wrapper {
+    max-width: 960px;
+  }
+
   header {
 		justify-content: space-between;
-    width: 100%;
 	}
 
   header h1 {
@@ -339,7 +351,7 @@ footer {
     font-weight: 700;        
     color: #3a3a3a;
     text-align: left;
-    margin: 60px 0 300px 0;
+    margin: 60px 0 600px 0;
     padding: 0 50px;
     width: 100%;
   }
@@ -364,8 +376,7 @@ footer {
     width: 93.5%;
   }
 
-  #about-one,
-	#about-two {
+  #about .about-description {
     width: 45%;
 		padding: 0;
     margin: 0;
@@ -377,9 +388,8 @@ footer {
     padding: 20px;
   }
 
-  #work-one,
-	#work-two,
-	#work-three {
+  #work .work-icon,
+  #work .work-description { /*check this*/
 		width: 26%;
     padding: 0;
     margin: 0;

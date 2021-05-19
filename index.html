@@ -8,6 +8,7 @@
   <title>Jubilee Austen | Portfolio</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/18723e8048.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -31,11 +32,10 @@
     <section class="top-section" id="about">
       <div class="content-wrapper">
         <h3>A little bit about me.</h3>
-        <div id="about-one">
+        <div class="about-description">
           <p>I've made my home base in Providence, Rhode Island, with my small growing family. My journey into tech started with a degree in journalism. As I started sharing my writing online, I was fascinated with how easily I could get my voice out there. I was hooked and wanted to learn how to build my own site to fit my own specific needs.</p>
         </div>
-
-        <div id="about-two">
+        <div class="about-description">
           <p>That curiosity then opened a door that could never be shut. When I learned how to build my first website, I realized I found something that gave me the freedom & versatility I was looking for in my work. Now I've made a full switch to front-end development, where I can use my organization skills and eye for detail to write clean, elegant code.</p>
         </div>
       </div>
@@ -43,20 +43,26 @@
 
     <section class="bottom-section" id="work">  
       <div class="content-wrapper">
-        <div id="work-one">
-          <img src="img/html-icon.png" alt="HTML icon" />
+        <div class="work-icon">
+          <img src="img/html-icon.png" alt="HTML icon"/>
+        </div>
+        <div class= "work-description">
           <h4>Hand-Coded HTML</h4>
           <p>My focus is writing clean, well-formatted, semantic HTML5 by hand to make sure that the content is easy to read, easy to collaborate, trouble-shoot and accessible.</p> 
         </div>
 
-        <div id="work-two">
-          <img src="img/css-icon.png" alt="CSS icon" />
+        <div class="work-icon">
+          <img src="img/css-icon.png" alt="CSS icon"/>
+        </div>
+        <div class= "work-description">
           <h4>Well-Organized CSS</h4>
           <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean and fast to load, and I make it a habit to stay up to date on current best practices.</p>
         </div>
 
-        <div id="work-three">
-          <img src="img/pencil-icon.png" alt="Pencil icon" />
+        <div class="work-icon">
+          <img src="img/pencil-icon.png" alt="Pencil icon"/>
+        </div>
+        <div class= "work-description">
           <h4>Ease Converting Designs into Code</h4>
           <p>You can trust me to take a designer's PSD and quickly & accurately convert it into a webpage that is pixel-perfect match.</p>
         </div>
@@ -66,23 +72,25 @@
 
   <footer id="contact">
     <div class="content-wrapper">
-      <div id="contact-image">
+      <div class="contact-image">
         <img src="img/contact-image.png" id="contact-img" alt="My contact image" />
       </div>
       
-      <div id="contact-text">
+      <div class="contact-content">
         <h3>Like what you see?</h3>
-        <h4 id="email-header">Let's meet for a cup of coffee</h4>
-        <a href="mailto:hi@jubileeausten.com"><img src="img/envelope.png" id= "envelope" alt="Envelope icon" /> &nbsp hi@jubileeausten.com</a>
-        <div id="social">
-          <h4 id="social-media-header">Or, find me on the interwebs</h4>
-          <ul>
-            <li><a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter icon" /></a></li>
-            <li><a href="https://www.tumblr.com"><img src="img/tumblr.png" alt="Tumblr icon" /></a></li>
-            <li><a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram icon" /></a></li>
-            <li><a href="https://www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn icon" /></a></li>
-            <li><a href="https://www.github.com"><img src="img/github.png" alt="Github icon" /></a></li>
-          </ul>
+        <div class="contact-text">
+          <h4>Let's meet for a cup of coffee</h4>
+          <a href="mailto:hi@jubileeausten.com"><i class="fas fa-envelope"></i> &nbsp hi@jubileeausten.com</a>
+        </div>
+
+        <div class="social">
+          <h4>Or, find me on the interwebs</h4>
+          <div class="social-icons">
+            <p><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></p>
+            <p><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></p>
+            <p><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></p>
+            <p><a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a></p>
+          </div>
         </div>
       </div>
     </div>
