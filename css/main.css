@@ -1,4 +1,6 @@
-/***** BASE STYLES *****/
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
 
 html {
   font-size: 16px;
@@ -8,10 +10,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
   font-size: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .content-wrapper {
@@ -65,7 +63,11 @@ img {
   margin: 0;
 }
 
-/***** HEADER *****/
+/* ==========================================================================
+   Mobile Styles
+   ========================================================================== */
+
+/* -------------------- Header -------------------- */
 
 header {
   background: url('../img/hero.png') center no-repeat #333;;
@@ -123,7 +125,7 @@ header h2 span {
   font-weight: 700;
 }
 
-/***** ABOUT *****/
+/* -------------------- About -------------------- */
 
 #about {
   width: 100%;
@@ -141,7 +143,7 @@ header h2 span {
   text-align: center;
 }
 
-/***** WORK *****/
+/* -------------------- Work -------------------- */
 
 #work {
   background: #f9ceb7;
@@ -170,12 +172,12 @@ width: 100%;
   font-size: 1.125em;
 }
 
-/***** FOOTER-CONTACT *****/
+/* -------------------- Footer -------------------- */
 
 footer {
-  width: 100%;
   background-color: #ebebeb;
   text-align: center;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,11 +251,12 @@ footer .social-icons p i {
   font-size: 1.75em;
 }
 
-/***** MEDIA QUERIES *****/
-
-/*Tablet*/
+/* ==========================================================================
+   Tablet Styles
+   ========================================================================== */
 @media all and (min-width: 768px) {
 	
+  /* Header */
   header nav ul {
     padding: 0 10%;
     display: flex;
@@ -264,6 +267,8 @@ footer .social-icons p i {
     font-size: 2.5em;
   }
 
+  /* Main */
+  #about .content-wrapper,
   #work .content-wrapper {
     display: flex;
     justify-content: space-around;
@@ -282,7 +287,8 @@ footer .social-icons p i {
     line-height: 30px;
     font-size: 1.25em;
   }
-
+  
+  /* Footer */
   footer .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -317,27 +323,28 @@ footer .social-icons p i {
   }
 }
 
-/*Desktop*/
+/* ==========================================================================
+   Desktop Styles
+   ========================================================================== */
 @media all and (min-width: 1200px) {
 
   .content-wrapper {
-    max-width: 960px;
+    max-width: 1000px;
   }
 
-  header {
-		justify-content: space-between;
+  /* Header */
+  header .content-wrapper {
+    justify-content: space-between;
 	}
 
   header h1 {
 		width: 30%;
-		padding: 60px 50px;
 		text-align: left;
 	}
 
   header nav {
-    width: 25%;
+    width: 30%;
     border-bottom: none;
-    padding: 60px 50px;
   }
 
 	header nav ul {
@@ -349,10 +356,11 @@ footer .social-icons p i {
   header h2 {
     font-size: 4.5em;
     font-weight: 700;        
-    color: #3a3a3a;
     text-align: left;
-    margin: 60px 0 600px 0;
-    padding: 0 50px;
+    line-height: 1.25;
+    color: #3a3a3a;
+    margin: 80px 0 300px 0;
+    padding: 0;
     width: 100%;
   }
     
@@ -360,20 +368,16 @@ footer .social-icons p i {
     color: #9b9b9b;
   }
 
-  #about,
-  #work {
-    padding: 40px 0;
-    justify-content: space-around;
-    align-items: flex-start;  
-    width: 100%;      
-  }
-
+  /* Main */
   #about h3 {
     font-size: 2.25em;
     text-align: left;
-    padding: 20px 0 20px 20px;
+    padding-bottom: 20px;
     margin: 0;
-    width: 93.5%;
+  }
+
+  #about .content-wrapper {
+    justify-content: space-between;
   }
 
   #about .about-description {
@@ -384,31 +388,43 @@ footer .social-icons p i {
 
   #about p {
     text-align: left;
-    margin: 0;
-    padding: 20px;
+  }
+
+  #work .content-wrapper {
+    margin: 60px 0;
+    justify-content: space-between;
+  }
+
+  #work article {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   #work .work-icon,
   #work .work-description { /*check this*/
-		width: 26%;
     padding: 0;
     margin: 0;
 	}
 
   #work h4 {
-    margin: 0 40px;
-    padding: 0;
+    font-size: 1.625em;
   }
 
   #work p {
-    padding: 0;
+    font-size: 1.125em;
+
   }
 
-  #contact {
-    padding: 60px 20px;
-  }
+  /* Footer */
 
-  #contact-image {
-    width: 40%;
-  } 
+  footer .contact-image {
+    border: 12px solid white;
+  }
+    
+  footer .social {
+    width: 80%;
+  }
 }
